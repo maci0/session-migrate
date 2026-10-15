@@ -1,0 +1,13 @@
+.env
+credentials
+.venv/
+node_modules/
+zig-out/
+.zig-cache/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.scratch/
+.claude/

@@ -1,0 +1,22 @@
+[project]
+name = "session-migrate"
+version = "0.2.0"
+description = "Move a paused Claude Code session onto Codex and back."
+requires-python = ">=3.12"
+
+[dependency-groups]
+dev = ["black", "mypy", "pytest", "ruff"]
+
+[tool.black]
+target-version = ["py312"]
+line-length = 100
+
+[tool.ruff]
+line-length = 100
+
+[tool.mypy]
+strict = true
+
+[tool.pytest.ini_options]
+addopts = "--basetemp=.scratch/pytest"
+pythonpath = ["."]
